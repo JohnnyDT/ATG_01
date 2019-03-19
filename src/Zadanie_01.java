@@ -162,7 +162,7 @@ public class Zadanie_01 {
                 for (int k = 0; k < matica.length; k++) {
                     maticaNaDruhu[i][j] += matica[i][k] * matica[k][j];
 
-                    if (maticaNaDruhu[i][j] == 0 || matica[i][j] == 0) {
+                    if (maticaNaDruhu[i][j] != 0 && matica[i][j] == 0) {
                         vysledok = false;
                     }
                 }
